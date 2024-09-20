@@ -1,0 +1,157 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    background-color: #F6F6F6;
+    border-bottom-width: 1px;
+    border-bottom-color: #000;
+    border-bottom-style: solid;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#titulo-menu {
+    margin: 0px 40px 0px 40px;
+    font-family: "Urbanist", sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+#links-menu {
+    width: 780px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#links-menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    font-family: "Urbanist", sans-serif;
+    font-weight: normal;
+    width: 620px;
+}
+
+#links-menu ul li {
+    position: relative; /* Necessário para o posicionamento do submenu */
+}
+
+#links-menu ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease-in-out;
+}
+
+#links-menu ul li a:hover {
+    color: #494949;
+}
+
+/* Estilo do submenu */
+#links-menu ul li ul {
+    display: none; /* Esconde o submenu por padrão */
+    position: absolute;
+    left: 0; /* Alinha o submenu diretamente abaixo do item pai */
+    top: 100%; /* Posiciona o submenu abaixo do item pai */
+    background-color: #F6F6F6;
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+    width: 200px; /* Largura do submenu */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+#links-menu ul li ul li {
+    padding: 10px 20px;
+}
+
+#links-menu ul li ul li a {
+    color: #000;
+    font-weight: normal;
+}
+
+#links-menu ul li ul li:hover {
+    background-color: #ddd;
+}
+
+/* Mostra o submenu quando o mouse está sobre o item pai */
+#links-menu ul li:hover ul {
+    display: block;
+}
+
+#sub-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 125px;
+}
+
+#sub-menu a {
+    text-decoration: none;
+    color: #000;
+}
+
+#usuario, #notificacoes, #configuracoes {
+    width: 40px;
+    height: 40px;
+    background-color: #F0F2F5;
+    border-radius: 10px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 850px) {
+    #links-menu ul li {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 556px) {
+    #menu {
+        height: 80px;
+    }
+}
+
+@media (max-width: 425px) {
+    #menu {
+        height: 110px;
+    }
+}
+
+@media (max-width: 379px) {
+    #menu {
+        height: 140px;
+    }
+}
+
+@media (max-width: 352px) {
+    #menu {
+        height: 170px;
+    }
+}
+
+@media (max-width: 332px) {
+    #menu {
+        height: 190px;
+    }
+}
+
+@media (max-width: 317px) {
+    #menu {
+        height: 210px;
+    }
+}
